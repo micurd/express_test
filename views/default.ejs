@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><% include partials/page/head.ejs %></head>
+  <body class="<%= title %>" >
+    <%include partials/page/header.ejs %>
+  	<div class = "container">
+  		<h1><%= title %></h1>
+		  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam quis eleifend justo. Mauris facilisis tincidunt arcu sed aliquam. Curabitur suscipit nulla sit amet neque pellentesque, sed porta diam dapibus. Pellentesque lacus orci, tincidunt a aliquam ac, accumsan ac metus. Sed sed erat sit amet lacus porttitor consequat. Praesent interdum suscipit dui nec scelerisque. Integer convallis orci eget tempus aliquet. Sed sit amet ante ut elit pellentesque euismod. Sed ornare, dui a maximus pellentesque, ligula nulla sodales nunc, quis facilisis massa arcu a sem. Cras ut faucibus elit. Donec lacinia convallis ante, sed pharetra massa pulvinar id.</p>
+		  <ul>
+		  <% for(var i =0; i < users.length; i++){ %>
+			  <li><%= users[i] %></li>
+		  <% } %>
+		  </ul>
+  	</div><!-- container-->
+    <% include partials/page/footer.ejs %>
+    <% include partials/page/jsdefault.ejs %>
+  </body>
+</html>
